@@ -49,10 +49,7 @@ const main = async () => {
     extension: process.env.RINGCENTRAL_EXTENSION,
     password: process.env.RINGCENTRAL_PASSWORD
   })
-
   await pubnub.subscribe()
-
   await delay(315360000000) // 10 years. means this bot will run "forever"
-  await rc.revoke()
 }
 main()
