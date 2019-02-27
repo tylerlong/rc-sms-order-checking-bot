@@ -52,7 +52,7 @@ const main = async () => {
 
   await pubnub.subscribe()
 
-  await delay(3600000)
+  await delay(315360000000) // 10 years. means this bot will run "forever"
   await rc.revoke()
 }
 main()
