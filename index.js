@@ -50,6 +50,6 @@ const main = async () => {
     password: process.env.RINGCENTRAL_PASSWORD
   })
   await pubnub.subscribe()
-  await delay(315360000000) // 10 years. means this bot will run "forever"
+  await delay(31536000000) // 1 year. means this bot will run "forever"
 }
 main()
