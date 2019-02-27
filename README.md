@@ -22,7 +22,7 @@ yarn start
 Send sms to the phone number you configured in `.env` and talk to the bot.
 
 
-## Sampe conversation
+## Sample conversation
 
 ```
 Me: Hi
