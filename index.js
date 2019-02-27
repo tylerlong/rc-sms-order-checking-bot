@@ -1,6 +1,5 @@
 const RingCentral = require('ringcentral-js-concise').default
 const Pubnub = require('ringcentral-js-concise/dist/pubnub').default
-const delay = require('timeout-as-promise')
 const moment = require('moment')
 
 const rc = new RingCentral(
@@ -50,6 +49,5 @@ const main = async () => {
     password: process.env.RINGCENTRAL_PASSWORD
   })
   await pubnub.subscribe()
-  await delay(31536000000) // 1 year. means this bot will run "forever"
 }
 main()
